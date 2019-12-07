@@ -1,0 +1,54 @@
+@import "../../scss/variables.scss";
+
+.image-wrapper {
+  width: 100%;
+  background-image: url("../../assets/couple-forest.jpg");
+  background-position: 50% 0;
+  background-size: cover;
+  .card {
+    border-top: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+    margin-top: calculateRem(54px);
+    background-color: rgba(0, 95, 67, 0.7);
+    color: #ffffff;
+    font-family: $font-family;
+    padding: calculateRem(32px) calculateRem(21px);
+    h3 {
+      text-shadow: calculateRem(1px) calculateRem(1px) calculateRem(2px)
+        rgba(0, 0, 0, 0.5);
+      font-size: calculateRem(24px);
+      margin: 0 0 14px 0;
+      line-height: calculateRem(33px);
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+
+  @include for-size(small-tablet) {
+    width: 30%;
+  }
+
+  @include for-size(tablet) {
+    width: 30%;
+
+    .card {
+      padding: calculateRem(32px) calculateRem(43px);
+      
+      h3 {
+        line-height: calculateRem(39px);
+      }
+    }
+  }
+
+  @include for-size(small-desktop) {
+    width: 60%;
+
+    .card {
+      padding: calculateRem(33px) calculateRem(30px);
+      h3 {
+        font-size: calculateRem(28px);
+      }
+    }
+  }
+}

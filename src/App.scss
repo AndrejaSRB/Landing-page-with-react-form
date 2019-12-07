@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import "./scss/variables.scss";
+@import "./scss/functions.scss";
+@import "./scss/mixins.scss";
+@import "./components/Banner/Banner.scss";
+@import "./components/Header/Header.scss";
+@import "./components/Footer/Footer.scss";
+@import "./components/CustomField/CustomField.scss";
+@import "./components/CustomSelect/CustomSelect.scss";
+@import "./components/FormSection/FormSection.scss";
+@import "./components/ImageSection/ImageSection.scss";
+
+.App {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include for-size(small-tablet) {
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  @include for-size(desktop){
+    .container {
+      width: 1440px;
+      margin: 0 auto;
+    }
+  }
+}

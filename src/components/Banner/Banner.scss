@@ -1,0 +1,10 @@
+@import "../../scss/variables.scss";
+.banner-container {
+  text-align: center;
+  margin-top: calculateRem(10px);
+  margin-bottom: calculateRem(5px);
+  svg {
+    width: calculateRem(120px);
+    height: calculateRem(40px);
+  }
+}

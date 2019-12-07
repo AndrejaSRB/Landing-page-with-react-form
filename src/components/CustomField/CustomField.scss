@@ -1,0 +1,31 @@
+@import "../../scss/variables.scss";
+
+.custom-field {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family;
+  margin-bottom: calculateRem(8px);
+  label {
+    font-weight: 600;
+    color: $text-color;
+    font-size: calculateRem(14px);
+    margin: 0 0 calculateRem(4px) calculateRem(5px);
+  }
+  input {
+    border: 1px solid #5339bc;
+    border-radius: calculateRem(5px);
+    background-color: #ffffff;
+    color: $text-color;
+    padding: calculateRem(11px);
+    font-family: $font-family;
+    font-size: calculateRem(12px);
+    &:focus {
+      outline: none;
+      border: 1px solid #ff7226;
+      box-shadow: $box-shadow;
+    }
+  }
+  .error {
+    background-color: $error-color;
+  }
+}

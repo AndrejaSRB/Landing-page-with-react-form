@@ -1,0 +1,56 @@
+@import "../../scss/variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: calculateRem(5px) calculateRem(15px);
+
+  .logo {
+    img {
+      max-width: calculateRem(140px);
+      margin-right: calculateRem(10px);
+    }
+  }
+
+  div {
+    color: $text-color;
+    font-family: $font-family;
+    font-size: calculateRem(12px);
+    font-style: italic;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-align: right;
+  }
+
+  @include for-size(mobile) {
+    div {
+      font-size: calculateRem(16px);
+    }
+  }
+
+  @include for-size(tablet) {
+    padding: 0 calculateRem(10px);
+    height: calculateRem(85px);
+
+    .logo {
+      img {
+        max-width: calculateRem(180px);
+        margin: calculateRem(18px) calculateRem(10px) calculateRem(18px) 0;
+      }
+    }
+  }
+
+  @include for-size(small-devices) {
+    div {
+      font-size: calculateRem(24px);
+    }
+  }
+
+  @include for-size(desktop) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+

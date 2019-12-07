@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+  @mixin for-size($size) {
+    @if $size == mobile {
+      @media (max-width: $mobile) { @content; }
+    } @else if $size == small-devices {
+      @media (min-width: $small-devices) { @content; }
+    } @else if $size == small-tablet {
+      @media (min-width: $small-tablet) { @content; }
+    } @else if $size == tablet {
+      @media (min-width: $tablet) { @content; }
+    } @else if $size == small-desktop {
+      @media (min-width: $small-desktop) { @content; }
+    }@else if $size == desktop {
+      @media (min-width: $desktop) { @content; }
+    }
+  }
+

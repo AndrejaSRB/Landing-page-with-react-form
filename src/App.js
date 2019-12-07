@@ -13,7 +13,7 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => dispatch(getUserId()), [dispatch]);
 
-//I added redirect just because of task so, my app can include affid parameter
+// I added redirect just because of task so, my app can include affid parameter
   return (
     <div className="App">
       <BrowserRouter>
@@ -31,5 +31,3 @@ function App() {
 }
 
 export default App;
-
-// daodaj svuda propTypes

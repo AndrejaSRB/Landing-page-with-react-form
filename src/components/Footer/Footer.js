@@ -1,6 +1,5 @@
 import React from "react";
 import { ReactComponent as EmailIconSvg } from '../../assets/email-icon.svg';
-// import EmailIconSvg from '../../assets/email-icon.svg';
 
 const Footer = () => (
   <footer className="footer">
@@ -26,7 +25,6 @@ const Footer = () => (
     </div>
     <div className="footer-contact-us">
         <EmailIconSvg />
-        {/* <img src={EmailIconSvg}/> */}
         <div>Contact us!</div>
       </div>
   </footer>

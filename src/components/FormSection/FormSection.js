@@ -55,13 +55,6 @@ const FormSection = props => {
 
   const filterPhoneNumber = phone => phone.replace(/\D/g, "");
 
-  const handleSubmitForm = () => {
-    console.log('handleSubmitForm')
-    if(phone === ""){
-      setPhoneError(true)
-    }
-    onSubmit();
-  }
   const onSubmit = async values => {
     const dateOfBirth = formatDateOfBirth(
       values.year,
@@ -103,7 +96,7 @@ const FormSection = props => {
         <h3>Get a Quote on Your Policy Today</h3>
       </div>
       <Form
-        onSubmit={handleSubmitForm}
+        onSubmit={onSubmit}
         render={({ handleSubmit }) => (
           <form onSubmit={handleSubmit} className="form" noValidate>
             <div className="form-body">
